@@ -1,0 +1,78 @@
+.section-services {
+  @include flex("column");
+  margin-bottom: 40px;
+}
+
+.services {
+  @include flex("row");
+  padding: 17px 35px 0 81px;
+  margin: 0;
+}
+
+.services__item {
+  @extend %list;
+  width: 285px;
+  margin-bottom: 86px;
+  position: relative;
+
+  &:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -49px;
+    display: block;
+    height: 32px;
+    width: 32px;
+    margin: 5px 30px 30px 0;
+  }
+
+  &--photography::before {
+    background-image: url("../../images/icons/features/alarm.svg");
+  }
+
+  &--web-design::before {
+    background-image: url("../../images/icons/features/graph.svg");
+  }
+
+  &--creativity::before {
+    background-image: url("../../images/icons/features/desktop.svg");
+  }
+
+  &--seo::before {
+    background-image: url("../../images/icons/features/book.svg");
+  }
+
+  &--css-html::before {
+    background-image: url("../../images/icons/features/house.svg");
+  }
+
+  &--digital::before {
+    background-image: url("../../images/icons/features/digital.svg");
+  }
+}
+
+.services__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services__title {
+  @include font-size(14px, 1.2);
+  font-family: $main-font-title;
+  text-transform: uppercase;
+  color: $title-dark-color;
+  font-weight: 600;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.services__description {
+  @include font-size(14px, 1.6);
+  font-family: $main-font;
+  color: $text-color;
+  margin: 0;
+  padding: 7px 10px;
+}

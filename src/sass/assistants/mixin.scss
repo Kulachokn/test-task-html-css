@@ -1,0 +1,17 @@
+@mixin font-size($size, $height: "1.15") {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin flex ($direction: "row") {
+  display: flex;
+
+  @if $direction == "row" {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } @else if $direction == "column" {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

@@ -1,6 +1,15 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
+@import "assistants/variables";
+@import "assistants/placeholders";
+@import "assistants/mixin";
 @import 'normalize';
 @import 'base';
+
+
+@import "components/header-page";
+@import "components/container";
+@import "components/navigation";
+@import "components/section-welcome";
+@import "components/title-block";
+@import "components/services";
+@import "components/team";
+@import "components/footer";

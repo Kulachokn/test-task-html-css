@@ -1,0 +1,43 @@
+.title-block {
+  @include flex("column");
+  margin-bottom: 40px;
+
+  &--team {
+    margin-bottom: 78px;
+  }
+}
+
+.title-block__description {
+  @include font-size(24px, 1.15);
+  font-family: $decor-font-title;
+  color: $title-dark-color;
+  margin-top: 44px;
+  margin-bottom: 15px;
+}
+
+.title-block__title {
+  @include font-size(30px, 1.15);
+  font-family: $main-font-title;
+  color: $title-dark-color;
+  text-transform: uppercase;
+  margin: 0;
+
+  &::after {
+    padding-top: 38px;
+    margin: auto;
+    width: 60px;
+    display: block;
+    content: '';
+    border-bottom: 3px solid $palette-primary;
+  }
+}
+
+.title-block__text {
+  @include font-size(16px, 1.5);
+  font-family: $main-font;
+  color: $text-color;
+  text-align: center;
+  padding: 39px 7px 10px 15px;
+  margin: 0;
+  width: 1030px;
+}

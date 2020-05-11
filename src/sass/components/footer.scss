@@ -1,8 +1,7 @@
 .footer {
   @include flex("row");
   border-top: solid 1px $border-color;
-  padding-top: 8px;
-  padding-bottom: 7px;
+  padding: 8px 0 7px;
 
   &__text {
     @include font-size(14px, 1.2);

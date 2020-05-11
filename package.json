@@ -1,6 +1,7 @@
 {
   "name": "html-css-test",
   "version": "1.2.0",
+  "homepage": "https://Kulachokn.github.io/goit-test-task-html-css",
   "scripts": {
     "start": "cross-env PORT=1234 gulp start --development ",
     "build": "gulp build --production",
